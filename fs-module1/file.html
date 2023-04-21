@@ -1,0 +1,18 @@
+const http = require("http")
+const fs = require("fs")
+const PORT = 8080;
+
+
+const server = http.createServer((req,res)=>{
+fs.readFile('index.html',function(err,data){
+if(error==null)
+{
+console.log(data)
+}else()
+})
+res.end();
+})
+
+server.listen(PORT,function(){
+console.log('server startted')
+})
